@@ -22,22 +22,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Spotify Image - #1DB954" translatesAutoresizingMaskIntoConstraints="NO" id="SaM-ht-xea">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Spotify Image - #1DB954" translatesAutoresizingMaskIntoConstraints="NO" id="SaM-ht-xea">
                                 <rect key="frame" x="38" y="127" width="298" height="159"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-iY-B5n">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-iY-B5n">
                                 <rect key="frame" x="108" y="435" width="158" height="50"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Black" family="Circular Std" pointSize="23"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.11372549019607843" green="0.72549019607843135" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="login:" destination="nFN-oc-MNO" eventType="touchUpInside" id="TXF-9l-RLM"/>
                                     <action selector="loginWithSpotify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVe-C6-4m3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SpotifyParty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdP-qd-sKy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SpotifyParty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdP-qd-sKy">
                                 <rect key="frame" x="56" y="315" width="262" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Black" family="Circular Std" pointSize="42"/>
                                 <color key="textColor" red="0.11372549019607843" green="0.72549019607843135" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,8 +45,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SaM-ht-xea" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1VU-1b-ElK"/>
-                            <constraint firstItem="QS2-iY-B5n" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cuf-Ru-Hlg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BdP-qd-sKy" secondAttribute="trailing" constant="57" id="0Da-ti-qAW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QS2-iY-B5n" secondAttribute="bottom" constant="182" id="6za-L9-Js3"/>
+                            <constraint firstItem="BdP-qd-sKy" firstAttribute="top" secondItem="SaM-ht-xea" secondAttribute="bottom" constant="29" id="9VO-mB-6TN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QS2-iY-B5n" secondAttribute="trailing" constant="109" id="Rnc-bV-34G"/>
+                            <constraint firstItem="QS2-iY-B5n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="WHE-CP-iDG"/>
+                            <constraint firstItem="QS2-iY-B5n" firstAttribute="top" secondItem="BdP-qd-sKy" secondAttribute="bottom" constant="28" id="WUo-f0-m4P"/>
+                            <constraint firstItem="QS2-iY-B5n" firstAttribute="top" secondItem="BdP-qd-sKy" secondAttribute="bottom" constant="28" id="a5T-tt-wvA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SaM-ht-xea" secondAttribute="trailing" constant="39" id="cen-yB-fRw"/>
+                            <constraint firstItem="SaM-ht-xea" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="o84-Gj-8zt"/>
+                            <constraint firstItem="BdP-qd-sKy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="osB-Rv-E6c"/>
+                            <constraint firstItem="SaM-ht-xea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="qAz-OC-V7D"/>
+                            <constraint firstItem="BdP-qd-sKy" firstAttribute="top" secondItem="SaM-ht-xea" secondAttribute="bottom" constant="29" id="zc7-Eb-EbE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,6 +65,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="nFN-oc-MNO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="116.49175412293854"/>
         </scene>

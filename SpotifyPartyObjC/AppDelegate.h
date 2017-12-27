@@ -13,8 +13,6 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,SPTAudioStreamingDelegate>
 
-//@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
 
 @property (strong, nonatomic) UIWindow *window;
 

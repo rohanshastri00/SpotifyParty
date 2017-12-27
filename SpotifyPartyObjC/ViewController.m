@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
@@ -20,6 +21,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)loginWithSpotify:(UIButton *)sender {
+    
+    AppDelegate* start = (AppDelegate*)[[UIApplication sharedApplication]delegate];
 }
 
 
