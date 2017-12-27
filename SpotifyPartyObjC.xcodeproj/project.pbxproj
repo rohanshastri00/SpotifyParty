@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		1CCEDC211FF318BC0098D535 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		1CCEDC231FF324E10098D535 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1CF7E6F91FEC864B002BF9C3 /* SpotifyPartyObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyPartyObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF7E6FC1FEC864B002BF9C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CF7E6FD1FEC864B002BF9C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		1CF7E6F01FEC864B002BF9C3 = {
 			isa = PBXGroup;
 			children = (
+				1CCEDC231FF324E10098D535 /* README.md */,
 				1CCEDC201FF318B40098D535 /* Fonts */,
 				1CF7E7201FEC86E3002BF9C3 /* Frameworks */,
 				1CF7E6FB1FEC864B002BF9C3 /* SpotifyPartyObjC */,
