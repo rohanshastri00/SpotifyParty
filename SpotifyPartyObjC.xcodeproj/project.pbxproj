@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CCEDC221FF318D80098D535 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1CCEDC211FF318BC0098D535 /* CircularStd-Black.otf */; };
 		1CF7E6FE1FEC864B002BF9C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7E6FD1FEC864B002BF9C3 /* AppDelegate.m */; };
 		1CF7E7011FEC864B002BF9C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7E7001FEC864B002BF9C3 /* ViewController.m */; };
 		1CF7E7041FEC864B002BF9C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF7E7021FEC864B002BF9C3 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		1CF7E7091FEC864B002BF9C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF7E7071FEC864B002BF9C3 /* LaunchScreen.storyboard */; };
 		1CF7E70C1FEC864B002BF9C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7E70B1FEC864B002BF9C3 /* main.m */; };
 		1CF7E7161FEC864C002BF9C3 /* SpotifyPartyObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7E7151FEC864C002BF9C3 /* SpotifyPartyObjCTests.m */; };
+		1CF7E7241FEC8705002BF9C3 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7E7231FEC8705002BF9C3 /* SpotifyAuthentication.framework */; };
+		1CF7E7261FEC8713002BF9C3 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7E7251FEC8713002BF9C3 /* SpotifyAudioPlayback.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CCEDC211FF318BC0098D535 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
 		1CF7E6F91FEC864B002BF9C3 /* SpotifyPartyObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyPartyObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF7E6FC1FEC864B002BF9C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CF7E6FD1FEC864B002BF9C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +44,10 @@
 		1CF7E7111FEC864C002BF9C3 /* SpotifyPartyObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyPartyObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF7E7151FEC864C002BF9C3 /* SpotifyPartyObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotifyPartyObjCTests.m; sourceTree = "<group>"; };
 		1CF7E7171FEC864C002BF9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF7E7231FEC8705002BF9C3 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		1CF7E7251FEC8713002BF9C3 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		1CF7E7271FEC8876002BF9C3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1CF7E7281FEC887C002BF9C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF7E7241FEC8705002BF9C3 /* SpotifyAuthentication.framework in Frameworks */,
+				1CF7E7261FEC8713002BF9C3 /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +70,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CCEDC201FF318B40098D535 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1CCEDC211FF318BC0098D535 /* CircularStd-Black.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1CF7E6F01FEC864B002BF9C3 = {
 			isa = PBXGroup;
 			children = (
+				1CCEDC201FF318B40098D535 /* Fonts */,
+				1CF7E7201FEC86E3002BF9C3 /* Frameworks */,
 				1CF7E6FB1FEC864B002BF9C3 /* SpotifyPartyObjC */,
 				1CF7E7141FEC864C002BF9C3 /* SpotifyPartyObjCTests */,
 				1CF7E6FA1FEC864B002BF9C3 /* Products */,
@@ -101,6 +121,17 @@
 				1CF7E7171FEC864C002BF9C3 /* Info.plist */,
 			);
 			path = SpotifyPartyObjCTests;
+			sourceTree = "<group>";
+		};
+		1CF7E7201FEC86E3002BF9C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CF7E7281FEC887C002BF9C3 /* SystemConfiguration.framework */,
+				1CF7E7271FEC8876002BF9C3 /* AVFoundation.framework */,
+				1CF7E7251FEC8713002BF9C3 /* SpotifyAudioPlayback.framework */,
+				1CF7E7231FEC8705002BF9C3 /* SpotifyAuthentication.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +183,7 @@
 				TargetAttributes = {
 					1CF7E6F81FEC864B002BF9C3 = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					1CF7E7101FEC864C002BF9C3 = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -187,6 +218,7 @@
 			files = (
 				1CF7E7091FEC864B002BF9C3 /* LaunchScreen.storyboard in Resources */,
 				1CF7E7061FEC864B002BF9C3 /* Assets.xcassets in Resources */,
+				1CCEDC221FF318D80098D535 /* CircularStd-Black.otf in Resources */,
 				1CF7E7041FEC864B002BF9C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,11 +389,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SpotifyPartyObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shastri.SpotifyPartyObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -370,11 +409,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SpotifyPartyObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shastri.SpotifyPartyObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
